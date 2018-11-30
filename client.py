@@ -5,7 +5,7 @@ import tkinter as tk
 
 print(sys.argv[1])
 host = sys.argv[1]
-port = 8880
+port = 8888
 s = socket.socket()
 try:
     s.connect((host, port))
