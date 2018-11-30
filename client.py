@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import socket
 import sys
 import tkinter as tk
@@ -27,7 +28,7 @@ def send_commands():
         s.send(str.encode(cmd))
         client_response = str(s.recv(1024), 'utf-8')
         pwd = str(s.recv(1024), 'utf-8')
-        print(client_response, end="")
+        print(client_response)
         print("PWD:", pwd)
         var.set(pwd)
         list.insert(0.0, client_response)
